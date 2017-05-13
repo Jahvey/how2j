@@ -1,0 +1,2 @@
+study from how2j
+使用注解的方式进行跳转的配置
