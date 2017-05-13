@@ -9,7 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>upload</title>
+    <title></title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -23,9 +23,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-   	<form action="/uploadImage" method="post" enctype="multipart/form-data">
-		选择图片：<input type="file" name="image" accept="image/*"/> <br/>
-   		<input type="submit" value="上传"/>
-   	</form>
+   		${imageName}
+   		<br/>
+   		<img src="http://localhost:8080/image/${imageName }"/>
   </body>
 </html>
