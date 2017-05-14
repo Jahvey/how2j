@@ -11,20 +11,20 @@ import cn.com.servyou.po.Product;
 @Controller
 public class ProductController {
 	@RequestMapping("/addProduct")
-	public ModelAndView add(Product product) throws Exception {//Product product ÓÃÓÚ½ÓÊÜ×¢Èë
-		// ÒòÎªÊÇ·şÎñ¶ËÌø×ª£¬ËùÒÔµØÖ·À¸²»»á¸Ä±ä
+	public ModelAndView add(Product product) throws Exception {//Product product ç”¨äºæ¥å—æ³¨å…¥
+		// å› ä¸ºæ˜¯æœåŠ¡ç«¯è·³è½¬ï¼Œæ‰€ä»¥åœ°å€æ ä¸ä¼šæ”¹å˜
 		ModelAndView mv = new ModelAndView("showProduct");
 		return mv;
 	}
 	
 	@RequestMapping("/jump")
 	public ModelAndView jump() {
-		// ¿Í»§¶ËÌø×ª
+		// å®¢æˆ·ç«¯è·³è½¬
 		ModelAndView mv = new ModelAndView("redirect:/index");
 		return mv;
 	}
 	
-	//»»ÁËä¯ÀÀÆ÷£¬¾Í»áÖØĞÂ¼ÆÊı--Ã¿¸öÓÃ»§»áÓĞÒ»¸ösession
+	//æ¢äº†æµè§ˆå™¨ï¼Œå°±ä¼šé‡æ–°è®¡æ•°--æ¯ä¸ªç”¨æˆ·ä¼šæœ‰ä¸€ä¸ªsession
 	@RequestMapping("/check") 
 	public ModelAndView check(HttpSession session) {
 		Integer i = (Integer) session.getAttribute("count");

@@ -13,9 +13,9 @@ public class IndexController {
 	@RequestMapping("/index")
 	public ModelAndView handleRequest(HttpServletRequest request,
 		HttpServletResponse response) throws Exception {
-		//ModelAndView mv = new ModelAndView("/MyJsp.jsp");//Ö¸¶¨·µ»ØµÄview
-		ModelAndView mv = new ModelAndView("MyJsp");//ÊÓÍ¼¶¨Î»
-		mv.addObject("message", "Hello SpringMVC");//Ö¸¶¨·µ»ØµÄÊı¾İ
+		//ModelAndView mv = new ModelAndView("/MyJsp.jsp");//æŒ‡å®šè¿”å›çš„view
+		ModelAndView mv = new ModelAndView("MyJsp");//è§†å›¾å®šä½
+		mv.addObject("message", "Hello SpringMVC");//æŒ‡å®šè¿”å›çš„æ•°æ®
 		return mv;
 	}
 

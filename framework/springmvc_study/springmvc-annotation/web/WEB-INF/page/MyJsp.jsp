@@ -24,5 +24,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
     ${message} <br>
+    <p>
+      拦截器注入的时间为：
+      ${date}
+    </p>
   </body>
 </html>
